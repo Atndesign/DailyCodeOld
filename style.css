@@ -1,67 +1,91 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-header{
+body{
+    background: black;
+}
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     background-image: url("https://images.unsplash.com/photo-1509721823199-9d118705bd9b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=358dbb0843e2eed446bdddd0d84b747b&auto=format&fit=crop&w=1463&q=80");
     background-size: cover;
     color: white;
 }
-p{
-    
+
+p {
+    text-align: center;
     margin-top: 2em;
     width: 40%;
     text-align: center;
     line-height: 1.5em;
 }
-h1{
-    font-size: 5em;
+
+h1 {
+    font-size: 5vw;
     font-weight: 100;
     font-family: 'pacifico';
-
 }
-#liens{
+
+#liens {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 5px;
     background: rgb(0, 0, 0);
 }
-ul{
+
+ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
 }
-li{
+
+li {
     display: flex;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    width: 200px;
+    max-width: 20%;
     margin: 10px 10px;
-    height: 200px;
+    max-height: auto;
     background: white;
     box-shadow: 5px 5px 10px 0 rgb(0, 0, 0, .1);
 }
-li img{
+
+li img {
     width: 100%;
 }
-button{
+
+button {
     margin-top: 30px;
-    width: 10%;
-    height: 5%;
+    min-width: 10%;
+    min-height: 5%;
+    padding: 10px;
     border-radius: 10px;
     background: rgb(255, 90, 118);
-    border:none;
+    border: none;
     color: white;
     font-size: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 13vw;
+        word-break: normal;
+    }
+    p {
+        width: 90%;
+    }
+    button {
+        width: 90%;
+        height: 40px;
+    }
 }
