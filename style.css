@@ -67,7 +67,7 @@ li img {
 button {
     margin-top: 30px;
     min-width: 10%;
-    min-height: 5%;
+    min-height: auto;
     padding: 10px;
     border-radius: 10px;
     background: rgb(255, 90, 118);
