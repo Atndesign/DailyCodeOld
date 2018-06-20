@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 80vh;
     background-image: url("https://images.unsplash.com/photo-1509721823199-9d118705bd9b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=358dbb0843e2eed446bdddd0d84b747b&auto=format&fit=crop&w=1463&q=80");
     background-size: cover;
     color: white;
@@ -67,7 +67,6 @@ li img {
 button {
     margin-top: 30px;
     min-width: 10%;
-    min-height: auto;
     padding: 10px;
     border-radius: 10px;
     background: rgb(255, 90, 118);
