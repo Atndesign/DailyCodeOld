@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your japanese name</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6) ),url('https://img00.deviantart.net/c22f/i/2018/184/6/a/glow_in_the_night_by_atndesign-dcg60w2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            font-family: monospace;
+            font-weight: 100;
+            width: 100vw;
+            height: 100vh;
+        }
+        h1{
+            font-weight: 400;
+        }
+        button{
+            color:white;
+            font-size: .7em;
+            margin: 2em;
+            border: none;
+            padding: 1.8em;
+            background: transparent;
+            border: 5px solid white;
+            border-radius: 10px;
+            width: 100%;
+        }
+        h2{
+            font-size: 2em;
+            margin: 30px 0;        }
+        @media only screen and (min-width: 1000px){
+            button{
+                width: 20%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <button onclick="random()">What is my japanese name ?</button>
+    <h1>You're japanese name is: </h1>
+    <h2>Bob</h2>
+    <script>
+        const AlphabetStr = ["ka","tu","mi","te","ku","lu","ji","ri","ki","zu","me","ta","rin","to","mo","no","ke","shi","ari","chi","do","ru","mei","na","fu","zi"]
+        const answer = document.querySelector('h2');
+        function random(){
+            let answerArr = [];
+            
+            for(step = 0; step < 3; step++){
+            var answerValue = AlphabetStr[Math.floor((Math.random() * AlphabetStr.length))];
+            answerArr.push(answerValue);
+        }
+            answer.textContent = answerArr.join("");            
+        }
+    </script>
+</body>
+</html>
