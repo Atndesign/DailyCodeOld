@@ -11,7 +11,7 @@ document.customForm.addEventListener('submit', (e) => {
 
 
 
-  var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${research}&api_key=aQincJRxlB7omcrHVXOStDTDv72utvwa&limit=${number}"`);
+  var xhr = $.get(`https://api.giphy.com/v1/gifs/search?q=${research}&api_key=aQincJRxlB7omcrHVXOStDTDv72utvwa&limit=${number}"`);
 
   xhr.done((response) => {
     console.log("success got data", response);
