@@ -98,8 +98,12 @@ textarea {
    ========================================================================== */
 .inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
+}
+img{
+    width: 380px;
 }
 input{
     border: none;
