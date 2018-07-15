@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+button{
+    margin: 30px 0;
+    width: 60%;
+    padding: 20px;
+    height: auto;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 80px;
+    color:white;
+    font-size: 1.5em;
+}
+button:hover{
+    background: white;
+    color: black;
+}
+h3{
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+.subtext{
+    font-weight: 100;
+    font-size: 0.5em;
+}
+.burgerWrapper{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.burger{
+    margin: 10px 0;
+    width: 40px;
+    height: 5px;
+    background: white;
+}
+
+nav{
+    display: none;
+}
+
+h1 {
+    display: block;
+    width: 20%;
+    background: #FFFFFF;
+}
+.menu{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    animation: slide .5s ease-out;
+    background: rgb(0, 0, 0, .9);
+}
+
+@keyframes slide{
+    0%{
+        left: -800px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.menu .linkwrapper{
+    list-style: none;
+    width: 100%;
+    height: 125px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;;
+    margin: 40px 0;
+    z-index: 5;
+    color: white;
+}
+.menu .linkwrapper li{
+    margin: 20px 0;
+
+}
+
+nav .linkwrapper{
+    list-style: none;
+    font-size: 1.2em;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+nav .linkwrapper li{
+    
+    margin: 0 20px;
+    display: inline-block;
+
+}
+nav .linkwrapper li:hover{
+    color: rgb(255, 196, 196);
+}
+nav>h1 {
+    padding: 20px;
+    display: block;
+    text-align: center;
+    margin: auto 0
+}
+
+header {
+    width: 100%;
+    background-image: url(BG2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: table;
+    transition: 2s;
+}
+
+.headerText {
+    transition: 1s;
+    padding: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer{
+    text-align: center;
+}
+@media only screen and (min-width: 1000px){
+    nav a{
+        text-decoration:none;
+        color: black; 
+    }
+    nav>h1 {
+        float: left;
+    }
+    .wrapper{
+        padding: 0 120px;
+    }
+    .artcile{
+        
+        width: 100%;
+    }
+    .articleContainer{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto auto;
+
+    }
+    .headerText{
+        font-size: 2em; 
+        padding: 0 25%;    
+    }
+    .burgerWrapper{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    button{
+        padding: 20px;
+        font-size: 1em;
+    }
+}   
