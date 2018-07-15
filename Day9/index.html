@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            background-color: skyblue;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 5em;
+            font-family: monospace;
+            font-weight: 100;
+            width: 100vw;
+            height: 100vh;
+        }
+        div{
+            display: flex;
+            position: absolute;
+            height: 100px;
+            top: 0;
+            width: 100%;
+            background: purple
+        }
+        button{
+            height: 100%;
+            padding: 10px;
+            background: rgb(134, 78, 139);
+            color: white;
+            border: 1px solid rgb(87, 50, 90);
+            flex: 1;
+            top:0;
+            left: 0;
+        }
+        form{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height:100%;
+        }
+        input{
+            height: 100%;
+        }
+    </style>
+    <title>Timer</title>
+</head>
+<body>
+    <div class="header">
+        <button data-time ="1500">25min GO</button>
+        <button data-time ="900">15min GO</button>
+        <button data-time ="600">10min GO</button>
+        <button data-time ="300">5min GO</button>
+        <button id="stop">Stop</button>
+        <form name="customForm">
+            <input name="minutes" placeholder="Enter minutes">
+        </form>
+    </div>
+    <h1>0:10</h1>
+    <footer style="display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  background: black;">
+      <a href="../index.html" style="color: white;
+      text-decoration: none;">Go back</a>
+  </footer>
+    <script>
+        let countdown;
+        var h1 = document.querySelector("h1")
+        var buttons = document.querySelectorAll('button')
+        const stop = document.getElementById('stop');
+
+        function timer(seconds){
+            //Clear any existing interval
+            clearInterval(countdown)
+
+            const now = Date.now();
+            const then = now + seconds * 1000;
+            displayTimeLeft(seconds)
+
+           countdown = setInterval(() => {
+                const secondLeft = Math.round((then - Date.now()) / 1000);
+                //check if we should stop the timer
+                if(secondLeft < 0){
+                    clearInterval(countdown)
+                    return;
+                }
+
+                //Display it
+                displayTimeLeft(secondLeft)
+            },1000)
+        }
+
+        function displayTimeLeft(seconds){
+            const minutes = Math.floor(seconds/60);
+            const remainder = seconds % 60;
+            const display = `${minutes}:${remainder < 10 ? "0" : ""}${remainder} `;
+            h1.textContent = display;
+            console.log({minutes, remainder})
+            
+        }
+        function startTimer(){
+            const seconds = parseInt(this.dataset.time);
+            timer(seconds);
+        }
+
+
+        stop.addEventListener('click', ()=>{
+            clearInterval(countdown)
+        })
+        buttons.forEach(button => button.addEventListener('click',startTimer))
+        document.customForm.addEventListener('submit',function(e){
+            e.preventDefault();
+            const mins = this.minutes.value;
+            console.log(mins);
+            timer(mins * 60);
+            this.reset();
+        })
+    </script>
+</body>
+</html>
