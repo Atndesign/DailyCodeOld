@@ -6,12 +6,106 @@
     text-decoration: none;
 }
 
-nav {
-    width: 100%;
-    height: 60px;
-    background: #FFFFFF;
+button{
+    margin: 30px 0;
+    width: 60%;
+    padding: 20px;
+    height: auto;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 80px;
+    color:white;
+    font-size: 1.5em;
+}
+button:hover{
+    background: white;
+    color: black;
+}
+h3{
+    font-size: 2.2em;
+    font-weight: bolder;
 }
 
+.subtext{
+    font-weight: 100;
+    font-size: 0.5em;
+}
+.burgerWrapper{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.burger{
+    margin: 10px 0;
+    width: 40px;
+    height: 5px;
+    background: white;
+}
+
+nav{
+    display: none;
+}
+
+h1 {
+    display: block;
+    width: 20%;
+    background: #FFFFFF;
+}
+.menu{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    animation: slide .5s ease-out;
+    background: rgb(0, 0, 0, .9);
+}
+
+@keyframes slide{
+    0%{
+        left: -800px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.menu .linkwrapper{
+    list-style: none;
+    width: 100%;
+    height: 125px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;;
+    margin: 40px 0;
+    z-index: 5;
+    color: white;
+}
+.menu .linkwrapper li{
+    margin: 20px 0;
+
+}
+
+nav .linkwrapper{
+    list-style: none;
+    font-size: 1.2em;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+nav .linkwrapper li{
+    
+    margin: 0 20px;
+    display: inline-block;
+
+}
+nav .linkwrapper li:hover{
+    color: rgb(255, 196, 196);
+}
 nav>h1 {
     padding: 20px;
     display: block;
@@ -21,11 +115,11 @@ nav>h1 {
 
 header {
     width: 100%;
-    background-image: url(BG.png);
+    background-image: url(BG2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 50vh);
+    height: 100vh;
     display: table;
     transition: 2s;
 }
@@ -40,77 +134,16 @@ header {
     color: white;
     display: table-cell;
     vertical-align: middle;
-    text-shadow: 2px 2px 8px black;
 }
 
-.container-subtext {
-    transition: 3s;
-    height: 80px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
-    
-}
-
-.artcile {
-    position: relative;
-    height: 300px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 70% auto;
-    flex-direction: column;
-}
-
-.artcile>img {
-    z-index: -10;
-    width: 100%;
-    grid-row: auto
-}
-
-.artcile p {
-    padding: 0 10px; 
-    z-index: 2;
-    position: absolute;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 400;
-}
-
-.reddish {
-
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(255, 217, 217, 0.8);
-}
-
-a {
-    z-index: 2;
-    color:white;
-    width: 50%;
-    text-align: center;
-    background: #FF7D7D;
-    border-radius: 5px;
-    padding: 10px 0;
-    font-size: 1.2em; 
-    transition: .2s;
-
-}
-a:hover{
-    background: rgb(221, 80, 80);
-    transition: .2s;
-}
 footer{
     text-align: center;
 }
 @media only screen and (min-width: 1000px){
+    nav a{
+        text-decoration:none;
+        color: black; 
+    }
     nav>h1 {
         float: left;
     }
@@ -130,5 +163,15 @@ footer{
     .headerText{
         font-size: 2em; 
         padding: 0 25%;    
+    }
+    .burgerWrapper{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    button{
+        padding: 20px;
+        font-size: 1em;
     }
 }   
