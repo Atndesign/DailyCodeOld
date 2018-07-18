@@ -1,3 +1,4 @@
+/*Reset CSS*/
 * {
     padding: 0;
     margin: 0;
@@ -5,31 +6,19 @@
     font-family: sans-serif;
     text-decoration: none;
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*Phone menu*/
+.menu {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    animation: slide .5s ease-out;
+    background: rgb(0, 0, 0, .9);
 }
-
-button:hover {
-    background: white;
-    color: black;
-}
-
-.line {
-    background: black;
-    height: 5px;
-    width: 80%;
-    margin: 20px 0;
-}
-
-h3 {
-    color: black;
-    font-size: 2.2em;
-    font-weight: bolder;
-}
-
 .burgerWrapper {
     display: block;
     position: absolute;
@@ -43,41 +32,6 @@ h3 {
     height: 5px;
     background: white;
 }
-
-nav {
-    display: block;
-}
-
-h1 {
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: white;
-    background: rgb(0, 0, 0,.8);
-}
-
-.menu {
-    list-style: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 3;
-    width: 100vw;
-    height: 100vh;
-    animation: slide .5s ease-out;
-    background: rgb(0, 0, 0, .9);
-}
-
-@keyframes slide {
-    0% {
-        left: -800px;
-    }
-    100% {
-        left: 0;
-    }
-}
-
 .menu .linkwrapper {
     list-style: none;
     width: 100%;
@@ -96,6 +50,11 @@ h1 {
     margin: 20px 0;
 }
 
+/*Nav*/
+
+nav {
+    display: block;
+}
 nav .linkwrapper {
     list-style: none;
     font-size: 1.2em;
@@ -114,22 +73,6 @@ nav .linkwrapper li:hover {
     color: rgb(255, 196, 196);
 }
 
-.container{
-    overflow:hidden;
-    width: 100%;
-    height: auto;
-}
-.container img{
-    margin: 40px 0;
-    width: 100%
-}
-.container p{
-    font-size: 1.2em;
-    padding: 0 20px;
-    text-align: center;
-    margin: 10px 0;
-}
-
 nav>h1 {
     padding: 20px;
     display: block;
@@ -137,6 +80,19 @@ nav>h1 {
     margin: auto 0
 }
 
+h1 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    background: rgb(0, 0, 0,.8);
+}
+/*Header*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header {
     width: 100%;
     background-repeat: no-repeat;
@@ -154,6 +110,36 @@ header {
     text-align: center;
     color: white;
 }
+h3 {
+    color: black;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+.line {
+    background: black;
+    height: 5px;
+    width: 80%;
+    margin: 20px 0;
+}
+/*Container profile*/
+
+.container{
+    overflow:hidden;
+    width: 100%;
+    height: auto;
+}
+.container img{
+    margin: 40px 0;
+    width: 100%
+}
+.container p{
+    font-size: 1.2em;
+    padding: 0 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+/*Container Skills*/
+
 .skillcontainer{
     margin: 20px 0;
     width: 100%;
@@ -189,11 +175,21 @@ header {
     
     top: 0
 }
+/*Footer*/
 footer {
    margin: 80px 0 0 0 ; 
     text-align: center;
 }
-
+/*Animation*/
+@keyframes slide {
+    0% {
+        left: -800px;
+    }
+    100% {
+        left: 0;
+    }
+}
+/*Responsive*/
 @media only screen and (min-width: 1000px) {
     nav a{
         text-decoration:none;

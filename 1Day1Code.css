@@ -1,3 +1,5 @@
+/*Reset CSS*/
+
 * {
     padding: 0;
     margin: 0;
@@ -6,55 +8,7 @@
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-button:hover {
-    background: white;
-    color: black;
-}
-
-.line {
-    background: black;
-    height: 5px;
-    width: 80%;
-    margin: 20px 0;
-}
-
-h3 {
-    color: black;
-    font-size: 2.2em;
-    font-weight: bolder;
-}
-
-.burgerWrapper {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-.burger {
-    margin: 10px 0;
-    width: 40px;
-    height: 5px;
-    background: white;
-}
-
-nav {
-    display: block;
-}
-
-h1 {
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: white;
-    background: rgb(0, 0, 0,.8);
-}
+/*Phone menu*/
 
 .menu {
     list-style: none;
@@ -69,13 +23,18 @@ h1 {
     background: rgb(0, 0, 0, .9);
 }
 
-@keyframes slide {
-    0% {
-        left: -800px;
-    }
-    100% {
-        left: 0;
-    }
+.burgerWrapper {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.burger {
+    margin: 10px 0;
+    width: 40px;
+    height: 5px;
+    background: white;
 }
 
 .menu .linkwrapper {
@@ -94,6 +53,12 @@ h1 {
 
 .menu .linkwrapper li {
     margin: 20px 0;
+}
+
+/*Nav*/
+
+nav {
+    display: block;
 }
 
 nav .linkwrapper {
@@ -120,8 +85,20 @@ nav>h1 {
     text-align: center;
     margin: auto 0
 }
+h1 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    background: rgb(0, 0, 0, .8);
+}
 
+/*Header*/
+    
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,6 +115,18 @@ header {
     text-align: center;
     color: white;
 }
+h3 {
+    color: black;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+.line {
+    background: black;
+    height: 5px;
+    width: 80%;
+    margin: 20px 0;
+}
+/*Articles*/
 
 .artcile {
     margin: 10px 0;
@@ -188,15 +177,28 @@ header {
     height: 100%;
     z-index: -10;
 }
+/*Footer*/
 
 footer {
     text-align: center;
 }
+/*Animation*/
+
+@keyframes slide {
+    0% {
+        left: -800px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*Responsive*/
 
 @media only screen and (min-width: 1000px) {
-    nav a{
-        text-decoration:none;
-        color: white; 
+    nav a {
+        text-decoration: none;
+        color: white;
     }
     nav>h1 {
         float: left;
@@ -244,8 +246,16 @@ footer {
         background: rgb(0, 0, 0, .8);
         width: 100%;
     }
-    h1{
+    h1 {
         background: transparent;
         width: 20%;
     }
 }
+
+
+
+
+
+
+
+
