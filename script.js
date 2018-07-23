@@ -9,8 +9,8 @@ cross.addEventListener('click', close)
 
 
 function open(){
-    menu.style.display = "block";
+    menu.style.width = "100vw";
 }
 function close(){
-    menu.style.display = "";
+    menu.style.width = "0";
 }

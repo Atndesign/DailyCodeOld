@@ -8,45 +8,55 @@
     text-decoration: none;
 }
 /*Phone Menu*/
-.menu{
+.menu {
+    overflow: hidden;
     list-style: none;
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: block;
     z-index: 3;
-    width: 100vw;
+    width: 0;
     height: 100vh;
-    animation: slide .5s ease-out;
+    transition: 0.8s;
     background: rgb(0, 0, 0, .9);
 }
-.burgerWrapper{
+.burgerWrapper {
     display: block;
     position: absolute;
     top: 10px;
     left: 20px;
 }
-.burger{
+
+.burger {
     margin: 10px 0;
     width: 40px;
     height: 5px;
     background: white;
 }
-.menu .linkwrapper{
+.linkwrapper {
+    transition: 0.4s;
     list-style: none;
     width: 100%;
     height: 125px;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    ;
     margin: 40px 0;
     z-index: 5;
     color: white;
 }
-.menu .linkwrapper li{
-    margin: 20px 0;
 
+.menu .linkwrapper li {
+    margin: 20px 0;
+}
+.menu .linkwrapper li a:visited{
+    color: white;
+}
+.menu .linkwrapper li a:active{
+    color: tomato;
 }
 /*Nav*/
 nav{
