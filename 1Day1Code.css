@@ -260,6 +260,10 @@ footer {
         background: transparent;
         width: 20%;
     }
+    .linkwrapper {
+        text-align: right;
+        margin: 0;
+    }
 }
 
 

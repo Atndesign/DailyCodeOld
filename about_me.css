@@ -267,4 +267,8 @@ footer {
     .skill{
         width: 90%;
     }
+    .linkwrapper {
+        text-align: right;
+        margin: 0;
+    }
 }
