@@ -9,23 +9,42 @@
 }
 
 /*Modification here*/
-span{
-    display: inline-block;
+body{
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(18, 18, 20);
 }
 h1{
-    
+    color: white;
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
 }
-i{
-    float: right;
+.hover{
+    margin: 40px 0;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    background: blanchedalmond;
+    width: 180px;
+    height: 50px;
+    color: black;
 }
-.wrapper{
-    position: relative;
-    margin: 0 auto;
-    width: 450px;
-    height: 600px;
-    background: darkgrey;
-}
-nav{
+.imageContainer{
     display: flex;
-    padding: 0 40px;
+    overflow: hidden;
+    width: 100%;
+}
+.image{
+    margin: 0 40px ;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+img{
+    height: 100%;
 }
