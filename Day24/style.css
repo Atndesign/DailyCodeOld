@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+    font-family: "roboto",Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: url("./media/nick-cooper-758086-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.v-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .2)
+}
+.header-content{
+    padding: 0 10px;
+    text-align: center;
+    position: absolute;
+}
+.heading1{
+    text-transform: uppercase;
+    color: white;
+    padding: 12px 52px ;
+    font-weight: bolder;
+    background: rgba(206, 255, 214,.52);
+    z-index: 5;
+    font-size: 132px;
+}
+img{
+    margin: 30px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 700px){
+    .heading1{
+        font-size: 7em;
+    }
+    img{
+        width: 30rem;
+    }
+}
