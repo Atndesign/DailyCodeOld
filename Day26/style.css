@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background: url('./images/BG.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold !important;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.blackout {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -5;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(29, 29, 29, 0.59);
+}
+
+/* Wrapper */
+
+.wrapper {
+    overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 645px;
+    height: 780px;
+    background: rgba(77, 204, 98, 0.88);
+    border-radius: 15px;
+}
+
+.wrapper h1 {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Form */
+
+form {
+    margin: 80px 0;
+    color: white;
+    font-size: 1.2em;
+    padding: 0 60px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+
+form button {
+    width: 341.59px;
+    height: 94px;
+    background: #76B5FF;
+    border-radius: 27px;
+    font-size: 1.2em;
+    color: white;
+    margin: 40px auto;
+}
+form button:hover {
+    transform: translatey(-5px);
+    transform: scale(1.1)
+}
+.wrapperBtn{
+    width: 100%;
+    text-align: center;
+}
+
+.popOut{
+    animation: popOut 1s ease-in ;
+}
+
+.popUp{
+    animation: popUp 1s ease-out ;
+}
+p{
+    color: white;
+    font-size: 1.3em;
+    padding: 0 100px;
+    text-align: center;
+}
+@keyframes popUp{
+    0%{
+        opacity: 0;
+        bottom: -200%;
+    }
+    30%{
+        opacity: 1;
+    }
+    85%{
+        bottom: 10%
+    }
+    87%{
+        bottom: 12%
+    }
+    90%{
+        bottom: 10%
+    }
+    93%{
+        bottom: 10%
+    }    
+    100%{
+        bottom: 10%
+    }
+}
+
+button{
+    padding: 40px;
+    background: #fff;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
