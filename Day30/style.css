@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background: black ;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Main */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 800px;
+    height: 800px;
+    background: #fff;
+}
+.box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    animation: spin 2s ease-in infinite;
+}
+
+
+/* @keyframes spin{
+    0%{
+        transform: rotate(0deg)
+    }
+
+    80%{
+        transform: rotate(1440deg)        
+    }
+    100%{
+        transform: rotate(0);
+    }
+} */
