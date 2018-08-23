@@ -26,7 +26,7 @@ function init(){
     snakee = new Snake([[6,4],[5,4],[4,4],[3,4],[2,4]], "right");
     Applee = new Apple([10,10]);
     canvas.style.margin = "50px auto";
-    canvas.style.backgroundColor = "#ddd";
+    canvas.style.backgroundColor = "black";
     update();
 };
 
@@ -83,9 +83,9 @@ function gameOver()
     ctx.save();
     canRestart = true;
     ctx.font = "bold 20px sans-serif";
-    ctx.fillStyle =  "#000";
-    ctx.fillText("Game Over", 5,30)
-    ctx.fillText("Press space key to restart", 5,80)
+    ctx.fillStyle =  "#fff";
+    ctx.fillText("Game Over", 15,30)
+    ctx.fillText("Press space key to restart", 15,80)
     score = 0;
     ctx.restore();
 }
@@ -107,7 +107,9 @@ function Snake(body,direction)
     this.draw = function()
     {
         ctx.save();
-        ctx.fillStyle = "#ff0000";
+        ctx.fillStyle = "#fff";
+        ctx.shadowColor = 'white';
+        ctx.shadowBlur = 20;
         for(let bodyElm = 0; bodyElm < this.body.length; bodyElm++){
             drawBlock(ctx,this.body[bodyElm]);
         }
@@ -205,7 +207,9 @@ function Apple(position){
     this.draw = function()
     {
         ctx.save();
-        ctx.fillStyle='#33cc33';
+        ctx.fillStyle='#fff';
+        ctx.shadowColor = 'white';
+        ctx.shadowBlur = 20;
         ctx.beginPath();
         let radius = blockSize/2;
         let x = this.position[0] * blockSize + radius; 
