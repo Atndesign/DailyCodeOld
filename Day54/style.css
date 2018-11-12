@@ -1,0 +1,91 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+body{
+    font-family: monospace;
+    padding: 40px 10px;
+    background: rgb(54, 54, 54);
+    color: white;
+}
+h1{
+    text-align: center;
+}
+#time{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 80px;
+}
+.buttons{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.button i{
+    color: black;
+    font-size: 1.6em;
+}
+
+/* TASKBTN */
+.taskTime,.pauseTime{
+    text-align: center;    
+}
+.taskTime p:nth-child(1),.pauseTime p:nth-child(1){
+    font-size: 40px;
+}
+
+.buttonsTimer{
+    display: flex;
+}
+.taskTime .buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.lilbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin: 0 10px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* TOMATO */
+.tomato{
+    text-align: center;
+    margin: 50px 0;
+}
+
+@media screen and (min-width: 720px){
+    .buttonHodler{
+        display: flex;
+        justify-content: center;
+    }
+    .buttonHodler .buttons{
+        width: 40%;
+
+    }
+    .taskHodler{
+        display: flex;
+        justify-content: space-around;
+    }
+}
