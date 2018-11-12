@@ -2,7 +2,7 @@ const timeTxt = document.getElementById('time');
 
 setInterval(() => {
 var now = new Date().getTime();
-var event = new Date("August 18, 2018 00:00:00").getTime();
+var event = new Date("August 17, 2019 00:00:00").getTime();
 
 var timeLeft = event - now;
 
