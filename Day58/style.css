@@ -1,0 +1,77 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: #181920;
+}
+.bottle{
+    width:169px;
+    margin-top: 65px;
+}
+.burgerMenu{
+    position: absolute;
+    font-size: 2rem;
+    top: 20px;
+    right: 20px;
+    color:#C4C4C4;
+}
+.grey{
+    color:#C4C4C4;
+}
+.blue{
+    color: #5F9FCD;
+}
+h1{
+    color: #5F9FCD;
+    font-size: 164px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+}
+h2{
+    padding: 0 20px;
+    color:#C4C4C4;
+    font-weight: 400;
+}
+a{
+    display: inline-block;
+    margin-top: 45px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #C4C4C4;
+    background-color: #5F9FCD;
+    padding: 12px 24px;
+    border-radius: 67px;
+    transition-duration: .2s;
+}
+a:hover{
+    background-color: rgb(75, 124, 158);
+    transition-duration: .2s;
+}
+
+@media only screen and (min-width: 1000px){
+    body{
+        display: flex;
+        justify-content: space-around;
+    }
+    h1{
+        font-size: 18rem;
+    }
+    .bottle{
+        width:30rem;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .textContainer{
+        padding: 60px;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
