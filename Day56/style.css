@@ -1,0 +1,33 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+    padding: 40px 10px;
+    background: rgb(209, 209, 209);
+    color: white;
+}
+.showcase img{
+    width: 100%;
+}
+.showcase{
+    margin: 20px;
+    border: 10px solid white;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 60px;
+    height: 60px;
+}

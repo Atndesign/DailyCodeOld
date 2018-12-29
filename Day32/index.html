@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+
+
+
+    <title>UI shopping card</title>
+</head>
+
+<body>
+    <div class="card">
+        <section class="top-section">
+            <img id="image-container" src="./images/1.png" alt="">
+            <section class="nav">
+                <img onclick="changeImage(this)" src="./images/1.png"  alt="">
+                <img onclick="changeImage(this)" src="./images/2.png"  alt="">
+                <img onclick="changeImage(this)" src="./images/3.png"  alt="">
+            </section>
+            <p class="price">80€</p>
+        </section>
+        <div class="product-info">
+            <div class="name">
+                <h1>Watch</h1>
+                <p class="desc">Awesome handmade watches</p>
+            </div>
+        </div>
+        <div class="add">Add to cart</div>
+    </div>
+    <script>
+        let container = document.getElementById('image-container');
+
+        function changeImage(image){
+            container.src = image.src
+
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

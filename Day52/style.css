@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+}
+td{
+    height: 40px;
+    width: 40px;
+}
+td button{
+    font-size: 1.2em;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    border: none;
+    margin: 0;
+
+}
+.display{
+    background: #292929;
+    color: white;
+    text-align: right;
+    font-size: 1.3em;
+    padding: 20px 5px;
+    margin: 0;
+}
+
+.equal{
+    height: 100%;
+    background: #3e98ff;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+}
+.reset{
+    background: rgb(255, 66, 33);
+    color: white;
+}

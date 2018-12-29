@@ -1,0 +1,28 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+    padding: 40px 10px;
+    background: rgb(54, 54, 54);
+    color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+}
+@media only screen and (min-width:1000px){
+    h1{
+        font-size: 400px;
+    }
+}
+

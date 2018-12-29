@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background: url('images/bg.jpg') no-repeat ;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Main */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 815px;
+    height: 645px;
+    background: #fff;
+}
+
+.col1{
+    display: block;
+    background: url("./images/zoltan-tasi-764110-unsplash.jpg") no-repeat center ;
+    background-size: cover;
+    float: left;
+    height: 100%;
+    width: 50%;
+    box-shadow: 12px 2px 20px 2px rgba(0, 0, 0,.5)
+}
+.col2{
+    padding: 44px;
+    float: left;
+    display: block;
+    height: 100%;
+    width: 50%;
+}
+.col2 h1{
+    text-align: center;
+    font-weight: 100;
+    color: black;
+}
+form{
+    margin: 63px 0;    
+}
+form input{
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 40px 0;
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px solid #c6c6c6;
+}
+
+form input:focus{
+    outline: none;
+}
+form label{
+    font-size: 1.1em;
+}
+
+form input[type="submit"]{
+    border: none;
+    padding: 20px 94px;
+    background: #ff5454;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        color: white;
+    }
+    .col1{
+        display: none;
+    }
+    .container{
+        background: transparent;
+    }
+    .col2{
+        width: 90%;
+    }
+    .col2 h1{
+        color: white;
+    }
+}

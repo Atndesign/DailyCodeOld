@@ -1,0 +1,40 @@
+.ghostContainer{
+    margin: 10px 0;
+    position: relative;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+
+#pumpkin{
+    display: block;
+    width: 9rem;
+}
+
+@media screen and (min-width: 666px){
+    img{
+        width: 20em;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    img{
+        width: 40em;
+    }
+    h1{
+        font-size: 3em;
+    }
+}
+
+@keyframes upAndDown{
+    0%,100%{
+
+    }
+    50%{
+
+    }
+}
