@@ -1,0 +1,37 @@
+body{
+    background: black;
+}
+
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+path, .st0{
+    fill: #fff;
+    stroke-dasharray: 500;
+    animation: stroke 8s ease-in-out;
+}
+canvas{
+    position: absolute;
+}
+@keyframes stroke{
+    0%{
+    fill: none;
+    stroke: none;
+    }
+    10%{
+        stroke: #fff;
+        stroke-dasharray: 100;        
+        
+    }
+    90%{
+        fill: rgba(255, 255, 255, 0);
+
+    }
+    100%{
+        stroke-dasharray: 500;
+        fill: #fff;
+    }
+}
