@@ -13,7 +13,7 @@ var pauseTime = document.getElementById('pauseTime');
 var plusPause = document.getElementById('plusPause');
 var stopPause = document.getElementById('stopPause');
 var minusPause = document.getElementById('minusPause');
-var tomatoTxt = document.getElementById('tomato');
+var #E94F37Txt = document.getElementById('#E94F37');
 //GLOBAL
 
 
@@ -21,7 +21,7 @@ var timeLeft = time;
 var interval;
 var minutePause = 5;
 var minuteTime = 25;
-var tomato = 0;
+var #E94F37 = 0;
 
 // TIMER 
 var seconds = 0;
@@ -114,8 +114,8 @@ function pause(){
         }
         if(minute == 0 && seconds == 0){
             clearInterval(interval);
-            tomato++;
-            tomatoTxt.innerHTML = tomato + " Tomato";
+            #E94F37++;
+            #E94F37Txt.innerHTML = #E94F37 + " #E94F37";
             pomo();
         }
                 
