@@ -1,0 +1,44 @@
+body{
+    background: #161515;
+    background-image: url('./images/heady.png');
+    background-repeat: no-repeat;
+    background-position: right 100px;
+    padding: 0 200px;
+}
+nav ul{
+    margin: 60px 0;
+    text-align: center;
+    list-style: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 94px; 
+    color: white;
+    font-size: 1.2em;
+    transition: .2s;
+}
+nav ul li:hover{
+    color: rgb(63, 63, 63);
+    transition: .2s;
+    
+}
+.logo{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: block;
+    /* position: relative;
+    left: 10%;
+    top: 240px; */
+}
+h2{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 2em;
+}
+.horizontalDivider{
+    background: white;
+    height: 1px;
+    width: 30%;
+    margin: 20px 0;
+}
