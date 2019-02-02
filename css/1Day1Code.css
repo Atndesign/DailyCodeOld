@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   text-decoration: none; }
 
 /*Phone menu*/
@@ -85,7 +84,6 @@ nav > h1 {
   margin: auto 0; }
 
 h1 {
-  font-family: "Pacifico", cursive;
   text-align: center;
   display: block;
   color: white;
@@ -112,8 +110,9 @@ header {
   color: white; }
 
 h3 {
+  font-family: "Pacifico", cursive;
   color: black;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: bolder; }
 
 .line {
@@ -207,6 +206,8 @@ footer {
   nav a {
     text-decoration: none;
     color: white; }
+  h3 {
+    font-size: 3rem; }
   nav > h1 {
     float: left; }
   .wrapper {

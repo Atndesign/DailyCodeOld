@@ -15,7 +15,6 @@ $exoticFont: 'Pacifico', cursive;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     text-decoration: none;
 }
 
@@ -107,7 +106,6 @@ nav>h1 {
     margin: auto 0
 }
 h1 {
-    font-family: $exoticFont;
     text-align: center;
     display: block;
     color: white;
@@ -137,8 +135,9 @@ header {
     color: white;
 }
 h3 {
+    font-family: $exoticFont;
     color: black;
-    font-size: 2.2em;
+    font-size: 2.2rem;
     font-weight: bolder;
 }
 .line {
@@ -247,6 +246,9 @@ footer {
     nav a {
         text-decoration: none;
         color: white;
+    }
+    h3{
+        font-size: 3rem;
     }
     nav>h1 {
         float: left;
